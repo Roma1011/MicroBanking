@@ -7,10 +7,11 @@
     </PropertyGroup>
 
     <ItemGroup>
-      <Folder Include="Communication\CommandHandlers\" />
-      <Folder Include="Communication\Commands\" />
       <Folder Include="Communication\EventHandlers\" />
-      <Folder Include="Communication\Events\" />
+    </ItemGroup>
+
+    <ItemGroup>
+      <ProjectReference Include="..\MicroBanking.Domain.Core\MicroBanking.Domain.Core.csproj" />
     </ItemGroup>
 
 </Project>
