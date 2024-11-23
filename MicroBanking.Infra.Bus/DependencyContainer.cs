@@ -2,12 +2,12 @@
 using MediatR;
 using MicroBanking.Application.Interfaces;
 using MicroBanking.Application.Services;
-using MicroBanking.Data.Context;
-using MicroBanking.Data.Repository;
-using MicroBanking.Domain.Communication.CommandHandlers;
-using MicroBanking.Domain.Communication.Commands;
+using Banking.Data.Context;
+using Banking.Data.Repository;
+using Banking.Domain.Communication.CommandHandlers;
+using Banking.Domain.Communication.Commands;
+using Banking.Domain.Interfaces;
 using MicroBanking.Domain.Core.Bus;
-using MicroBanking.Domain.Interfaces;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.DependencyInjection;
 using Rabbit.Infa.Bus;
