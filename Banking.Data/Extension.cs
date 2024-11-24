@@ -10,7 +10,7 @@ namespace Banking.Data;
 
 internal static class Extension
 {
-    public static IServiceCollection AddDataContext(this IServiceCollection collection)
+    public static IServiceCollection AddBankingDataContext(this IServiceCollection collection)
     {
         collection.AddDbContext<BankingDbContext>(options =>
         {

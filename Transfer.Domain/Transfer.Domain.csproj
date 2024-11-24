@@ -11,8 +11,6 @@
     <Folder Include="Communication\Commands\" />
     <Folder Include="Communication\EventHandlers\" />
     <Folder Include="Communication\Events\" />
-    <Folder Include="Interfaces\" />
-    <Folder Include="Models\" />
   </ItemGroup>
 
 </Project>

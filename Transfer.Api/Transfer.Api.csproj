@@ -17,4 +17,11 @@
         <PackageReference Include="Swashbuckle.AspNetCore" Version="6.6.2"/>
     </ItemGroup>
 
+    <ItemGroup>
+      <ProjectReference Include="..\MicroBanking.Infra.Bus\MicroBanking.Infra.Bus.csproj" />
+      <ProjectReference Include="..\Transfer.Application\Transfer.Application.csproj" />
+      <ProjectReference Include="..\Transfer.Data\Transfer.Data.csproj" />
+      <ProjectReference Include="..\Transfer.Domain\Transfer.Domain.csproj" />
+    </ItemGroup>
+
 </Project>

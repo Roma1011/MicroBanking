@@ -10,7 +10,7 @@ public static class Extension
     public static IServiceCollection AddBankingServices(this IServiceCollection collection)
     {
         collection.AddTransient<IAccountService, AccountService>();
-        collection.AddDataContext();
+        collection.AddBankingDataContext();
         return collection;
     }
 }
