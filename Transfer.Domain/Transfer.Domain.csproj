@@ -7,10 +7,10 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <Folder Include="CommandHandlers\" />
-    <Folder Include="Commands\" />
-    <Folder Include="EventHandlers\" />
-    <Folder Include="Events\" />
+    <Folder Include="Communication\CommandHandlers\" />
+    <Folder Include="Communication\Commands\" />
+    <Folder Include="Communication\EventHandlers\" />
+    <Folder Include="Communication\Events\" />
     <Folder Include="Interfaces\" />
     <Folder Include="Models\" />
   </ItemGroup>

@@ -5,7 +5,7 @@ using Microsoft.EntityFrameworkCore;
 
 namespace Banking.Data.Repository;
 
-public class AccountRepository:IAccountRepository
+internal class AccountRepository:IAccountRepository
 {
     private BankingDbContext _ctx;
 
