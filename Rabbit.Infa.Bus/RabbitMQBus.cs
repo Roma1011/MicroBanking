@@ -67,7 +67,7 @@ public sealed class RabbitMQBus(IMediator mediator):IEventBus
         var channel = connection.CreateModel();
 
         var eventName = typeof(T).Name;
-        channel.QueueDeclare(eventName);
+        channel.QueueDeclare(eventName,false,false,false,null);
         var consumer = new AsyncEventingBasicConsumer(channel);
         consumer.Received += Consumer_Received;
         channel.BasicConsume(eventName,true,consumer);
@@ -100,7 +100,7 @@ public sealed class RabbitMQBus(IMediator mediator):IEventBus
                 if(handler==null)continue;
                 var eventType = _eventTypes.SingleOrDefault(t => t.Name == eventName);
 
-                var @event = JsonSerializer.Deserialize<object>(message);
+                var @event = JsonSerializer.Deserialize(message,eventType);
 
                 var concreteType = typeof(IEventHandler<>).MakeGenericType(eventType);
 

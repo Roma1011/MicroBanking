@@ -11,12 +11,16 @@
   </ItemGroup>
 
   <ItemGroup>
+    <Reference Include="Microsoft.AspNetCore.Http.Abstractions">
+      <HintPath>C:\Program Files\dotnet\shared\Microsoft.AspNetCore.App\8.0.11\Microsoft.AspNetCore.Http.Abstractions.dll</HintPath>
+    </Reference>
     <Reference Include="Microsoft.Extensions.DependencyInjection.Abstractions">
       <HintPath>C:\Program Files\dotnet\shared\Microsoft.AspNetCore.App\8.0.11\Microsoft.Extensions.DependencyInjection.Abstractions.dll</HintPath>
     </Reference>
   </ItemGroup>
 
   <ItemGroup>
+    <ProjectReference Include="..\MicroBanking.Domain.Core\MicroBanking.Domain.Core.csproj" />
     <ProjectReference Include="..\Transfer.Data\Transfer.Data.csproj" />
     <ProjectReference Include="..\Transfer.Domain\Transfer.Domain.csproj" />
   </ItemGroup>

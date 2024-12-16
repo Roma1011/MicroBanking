@@ -5,9 +5,9 @@ var builder = WebApplication.CreateBuilder(args);
 
 builder.Services.AddControllers();
 builder.Services.AddSwaggerGen();
+builder.Services.AddBankingServices();
 
 DependencyContainer.RegisterServices(builder.Services);
-builder.Services.AddBankingServices();
 
 var app = builder.Build();
 
